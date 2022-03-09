@@ -1,3 +1,10 @@
+:root {
+  --background: #e7eaf6;
+  --mediumlight: #a2a8d3;
+  --mediumdark: #38598b;
+  --dark: #113f67;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,13 +12,13 @@
 }
 
 body {
-  background-color: #d9dcd6;
+  background-color: var(--background);
 }
 header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #2a607c;
+  background-color: var(--dark);
   color: #ffffff;
 }
 
@@ -44,6 +51,14 @@ li {
 a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  margin-left: -30px;
+}
+
+a:hover {
+  color: var(--dark);
+  background-color: var(--background);
 }
 
 p {
@@ -51,6 +66,7 @@ p {
 }
 
 .hero {
+  clear: both;
   height: 800px;
   width: 100%;
   margin-bottom: 25px;
@@ -72,23 +88,22 @@ p {
 section {
   width: 70%;
   display: block;
-  margin: 20px;
+  margin: 40px;
   float: right;
 }
 
 aside {
-  margin: 20px;
+  margin: 40px;
   padding: 20px;
-  /* clear: both; */
   float: left;
   width: 20%;
   height: 100%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #2589bd;
+  background-color: var(--mediumlight);
 }
 
 .benefitsection {
-  margin-bottom: 32px;
+  margin-bottom: 50px;
   color: #ffffff;
 }
 
@@ -108,7 +123,7 @@ h3 {
   padding: 50px;
   height: 300px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
+  background-color: var(--mediumdark);
   color: #ffffff;
 }
 
@@ -127,8 +142,11 @@ footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
+  background-color: var(--dark);
+  color: var(--background);
 }
 
 footer h2 {
-  font-size: 20px;
+  font-size: 40px;
+  font-family: "Caveat", cursive;
 }
