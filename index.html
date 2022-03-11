@@ -1,112 +1,124 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
+<html>
+  <head>
+    <title>Responsive Web Design</title>
     <meta charset="UTF-8" />
-    <link rel="resetcss" href="assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="cssreset" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <title>Professional Portforlio</title>
-</head>
-
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300&family=Satisfy&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <header>
-        <h1>JESSIE <span class="zhu">ZHU</span> DOHERTY</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#About Me">About Me</a>
-                </li>
-                <li>
-                    <a href="#Work">Work</a>
-                </li>
-                <li>
-                    <a href="#Contactme">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resumé</a>
-                </li>
-            </ul>
-        </nav>
+      <h1>JESSIE <span class="middle">ZHU</span> DOHERTY</h1>
+      <p>A Professional Coding Portfolio!</p>
     </header>
 
-    <!-- <img src="/assets/images/coding-student-background.jpg" class="hero" alt="background image for this site"> -->
+    <nav>
+      <ul>
+        <li><a href="#" class="links">About Me</a></li>
+        <li><a href="#" class="links">Resumé</a></li>
+        <li><a href="#" class="links">Coding Work</a></li>
+      </ul>
+      
+    </nav>
 
-    <section>
-        <div class="content">
-            <img src="./assets/images/work-html_css_javascript.jpeg" class="float-left" alt="picture of search-engine-optimization"/>
-            <h2>HTML/CSS/JavaScript</h2>
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
+    <main>
+      <aside>
+        <div class="sidehover">
+          <h2>About Me</h2>
+          <div class="sample-img">Image</div>
+          <p>
+            A brief introduction of me.
+          </p>
         </div>
-        <div class="content">
-            <img src="./assets/images/work-api-node-express-pic.jpeg" class="float-right" alt="picture of online-reputation-management"/>
-            <h2>APIs/Node.js/OOP</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
+        <div class="sidehover">
+          <h2>Resumé</h2>
+          <div class="sample-img">Image</div>
+          <p>
+            A copy of my Resumé.
+          </p>
         </div>
-        <div class="content" id="Contactme" >
-            <img src="./assets/images/work-sql-vs-nosql-pic2.png" class="float-left" alt="picture of social-media-marketing"/>
-            <h2>SQL/MVC/NoSQL</h2>
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
+        <div class="sidehover">
+          <h2>Coding Work</h2>
+          <div class="sample-img">Image</div>
+          <p>
+            Please take a look at my coding work listed on this page. 
+          </p>
         </div>
-        <div class="content">
-            <img src="./assets/images/work-mern-dark.jpeg" class="float-right" alt="picture of social-media-marketing"/>
-            <h2>React/MERN/State</h2>
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
+        <form>
+          <h1>Send me a query!</h1>
+          <p>
+            Want to develop a business relationship, feel free to send me a query!
+          </p>
+          <p>
+            <label for="username">Name:</label>
+            <!-- This element has a CSS declaration of `cursor: text` -->
+            <input id="username" type="text" placeholder="First Last" />
+          </p>
+          <p>
+            <label  for="email">E-mail:</label>
+            <input id="email" type="text" placeholder="me@example.com" />
+          </p>
+          <p>
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="New business!"></textarea>
+          </p>
+          <p>
+            <button>Submit</button>
+          </p>
+        </form>
+      </aside>
+
+      <section>
+        <div>
+          <h2>HTML/CSS/JavaScript</h2>
+          <div class="sample-img">Image</div>
+          <p>
+            It will stack on top of the sidebar once the screen hits 768px or
+            smaller.
+          </p>
         </div>
-    </section>
-  
-    <aside>
-        <div class="benefitsection" id="About Me">
-            <h3>About Me</h3>
-            <img src="./assets/images/lead-generation.png" alt="icon of lead-generation"/>
-            <p>
-                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
+        <div>
+          <h2>APIs/Node.js/OOP</h2>
+          <div class="sample-img">Image</div>
+          <p>
+            It will stack on top of the sidebar once the screen hits 768px or
+            smaller.
+          </p>
         </div>
-        <div class="benefitsection" id="Resumé">
-            <h3>Resumé</h3>
-            <img src="./assets/images/brand-awareness.png" alt="icon of brand-awareness"/>
-            <p>
-                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
+        <div>
+          <h2>SQL/MVC/NoSQL</h2>
+          <div class="sample-img">Image</div>
+          <p>
+            It will stack on top of the sidebar once the screen hits 768px or
+            smaller.
+          </p>
         </div>
-        <div class="benefitsection" id="placeholder">
-            <h3>Placeholder</h3>
-            <img src="./assets/images/cost-management.png" alt="icon of cost-management"/>
-            <p>
-                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
+        <div>
+          <h2>MERN Stack</h2>
+          <div class="sample-img">Image</div>
+          <p>
+            It will stack on top of the sidebar once the screen hits 768px or
+            smaller.
+          </p>
         </div>
-        <div class="benefitsection" id="placeholder">
-            <h3>Placeholder</h3>
-            <img src="./assets/images/cost-management.png" alt="icon of cost-management"/>
-            <p>
-                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
-        </div>
-    </aside>
-   
+      </section>
+    </main>
+
     <footer>
-        <h2 id="Contactme">Let's keep in touch!</h2>
-        <ul>
-            <li>Email:</li>
-            <li>Tel:</li>
-            <li>LinkedIn:</li>
-        </ul>
-        <h2>Crafted with love by Jessie Doherty</h2>
-        <p>
-            &copy; 2022 Doherty Solutions.
-        </p>
+      <h3>
+        Let's keep in touch!
+      </h3>
+      <ul class="contact-list">
+        <li><a href="mailto:zhuzhu930@yahoo.com">zhuzhu930@yahoo.com</a></li>
+        <li><a href="tel:+17328237072">+1 (732)823-7072</a></li>
+        <li><a href="https://github.com/zhuzhu930">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jessie-zhu-doherty-45216aa/">LinkedIn</a></li>
+      </ul>
+      <p>&copy; Doherty Solutions, LLC. All Rights Reserved. </p>
     </footer>
-</body>
-
+  </body>
 </html>

@@ -1,159 +1,159 @@
+/* Define variables for color palette */
 :root {
-  --background: #e7eaf6;
-  --mediumlight: #a2a8d3;
-  --mediumdark: #38598b;
-  --dark: #113f67;
+  --backgroundlight: #feffdf;
+  --lightyellow: #ffe79a;
+  --orange: #ffa952;
+  --backgroundred: #ef5a5a;
 }
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 body {
-  background-color: var(--background);
+  font-family: Arial;
+  margin: 0;
 }
+
+/* ----Header done---- */
 header {
-  padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  /* background-color: var(--dark); */
-  background-image: url(../images/header-background.jpg);
-  color: #ffffff;
-  margin: 0 40px 0 40px;
-}
-
-h1 {
-  display: inline-block;
-  font-size: 48px;
+  padding: 40px;
+  text-align: center;
+  background: var(--backgroundred);
+  color: #fff;
   font-family: "Caveat", cursive;
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Satisfy", cursive;
 }
 
-h1 .zhu {
-  color: #d9dcd6;
+header h1 {
+  font-size: 50px;
 }
 
+header p {
+  font-size: 30px;
+}
+header .middle {
+  color: var(--lightyellow);
+}
+
+/* ----Navigation bar Done---- */
 nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 30px;
+  background-color: var(--backgroundred);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links {
+  display: block;
+  color: var(--lightyellow);
+  padding: 15px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
-
-ul {
-  list-style-type: none;
+.links:hover {
+  color: var(--backgroundred);
+  background-color: var(--lightyellow);
 }
 
-li {
-  display: inline-block;
-  margin-left: 25px;
+/* ----Main part---- */
+main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 30px;
-  padding: 10px;
-  margin-left: -30px;
-}
-
-a:hover {
-  color: var(--dark);
-  background-color: var(--background);
-}
-
-p {
-  font-size: 16px;
-}
-
-/* .hero {
-  clear: both;
-  height: 600px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url(../images/coding-student-background.jpg);
-  background-size: cover;
-  background-position: center;
-} */
-
-.float-left {
-  float: left;
-  margin-right: 25px;
-}
-
-.float-right {
-  float: right;
-  margin-left: 25px;
-}
-
-section {
-  width: 70%;
-  display: block;
-  margin: 40px;
-  float: right;
-}
-
+/* ----Aside style---- */
 aside {
-  margin: 40px 0 40px 40px;
-  padding: 10px;
-  float: left;
-  width: 25%;
-  height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: var(--mediumlight);
+  flex: 1;
+  background-color: var(--lightyellow);
+  padding: 20px;
+  border-right: 10px solid var(--backgroundred);
+  font-family: fantasy;
 }
 
-.benefitsection {
-  margin-bottom: 76px;
-  color: #ffffff;
+.sidehover:hover {
+  background-color: var(--backgroundred);
 }
 
-h3 {
-  margin-bottom: 10px;
-  text-align: center;
+/* ----Section style---- */
+section {
+  flex: 3;
+  background-color: var(--lightyellow);
+  padding: 20px;
 }
 
-.benefitsection img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
+.sample-img {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  border: 1px solid black;
 }
-
-.content {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: var(--mediumdark);
-  color: #ffffff;
-}
-
-.content img {
-  max-height: 200px;
-  /* max-width: 400px; */
-}
-
-h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
+/*---- Footer style: style h3 and p---*/
 footer {
-  padding: 30px;
-  margin: 0 40px 0 40px;
-  clear: both;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
   text-align: center;
-  background-color: var(--dark);
-  color: var(--background);
+  background: var(--backgroundred);
+  color: var(--lightyellow);
 }
 
-footer h2 {
-  font-size: 40px;
+footer h3 {
   font-family: "Caveat", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+}
+
+footer p {
+  font-family: "Caveat", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: var(--lightyellow);
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: 2px solid var(--lightyellow);
+  border-radius: 2rem;
+  margin: 20px;
+  box-shadow: 10px 10px 8px var(--lightyellow);
+}
+
+/*--- Media queries Need to work on it---*/
+@media screen and (max-width: 768px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  main,
+  nav {
+    flex-direction: column;
+  }
+  /* Make the sidebar stack below the body */
+  aside {
+    order: 2;
+  }
+  /* Change the header background */
+  header {
+    background: #772014;
+  }
+  /* Change the navbar and footer background */
+  nav,
+  footer {
+    background-color: #bb8588;
+  }
 }
