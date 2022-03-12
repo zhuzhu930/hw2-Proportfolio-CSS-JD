@@ -11,41 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300&family=Satisfy&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- Header -->
     <header>
       <h1>JESSIE <span class="middle">ZHU</span> DOHERTY</h1>
-      <p>A Professional Coding Portfolio!</p>
+      <p>My Professional Coding Portfolio!</p>
     </header>
-
+    <!-- Navigation bar -->
     <nav>
       <ul>
-        <li><a href="#" class="links">About Me</a></li>
-        <li><a href="#" class="links">Resumé</a></li>
-        <li><a href="#" class="links">Coding Work</a></li>
-      </ul>
-      
+        <li><a href="#aboutme" class="links">About Me</a></li>
+        <li><a href="#resumé" class="links">Resumé</a></li>
+        <li><a href="#coding-work" class="links">Coding Work</a></li>
+      </ul> 
     </nav>
-
+    <!-- Main Area -->
     <main>
+      <!-- Side bar for introduction-->
       <aside>
         <div class="sidehover">
-          <h2>About Me</h2>
-          <div class="sample-img">Image</div>
+          <h2 id="aboutme">About Me</h2>
+          <img class="sample-img" src="./assets/images/About Me pic.JPG"></img>
           <p>
-            A brief introduction of me.
+            A translator, conference interpreter, amateur artist, avid gardener who wants to be a cool coder and web developer! 
           </p>
         </div>
         <div class="sidehover">
-          <h2>Resumé</h2>
-          <div class="sample-img">Image</div>
+          <h2 id="resumé">Resumé</h2>
+          <img class="sample-img" src="./assets/images/GT coding boot camp 2.jpeg"></img>
           <p>
-            A copy of my Resumé.
+            Currently a <a href="https://bootcamp.pe.gatech.edu/coding/">Georgia Tech Coding Boot Camp</a> student! Coding resumé coming soon!
           </p>
         </div>
         <div class="sidehover">
-          <h2>Coding Work</h2>
-          <div class="sample-img">Image</div>
+          <h2 id="coding-work">Coding Work</h2>
+          <img class="sample-img" src="./assets/images/coding-student-background.jpg"></img>
           <p>
-            Please take a look at my coding work listed on this page. 
+            Please take a look at my coding work listed on this page. I will be adding more projects, feel free to come back and take a look!
           </p>
         </div>
         <form>
@@ -55,11 +56,10 @@
           </p>
           <p>
             <label for="username">Name:</label>
-            <!-- This element has a CSS declaration of `cursor: text` -->
-            <input id="username" type="text" placeholder="First Last" />
+            <input id="username" type="text" placeholder="First Name, Last Name" />
           </p>
           <p>
-            <label  for="email">E-mail:</label>
+            <label for="email">E-mail:</label>
             <input id="email" type="text" placeholder="me@example.com" />
           </p>
           <p>
@@ -67,11 +67,11 @@
             <textarea id="message" placeholder="New business!"></textarea>
           </p>
           <p>
-            <button>Submit</button>
+            <button>SUBMIT</button>
           </p>
         </form>
       </aside>
-
+      <!-- Section for Coding Work list-->
       <section>
         <div>
           <h2>HTML/CSS/JavaScript</h2>
@@ -107,7 +107,7 @@
         </div>
       </section>
     </main>
-
+    <!-- Footer Contact-list -->
     <footer>
       <h3>
         Let's keep in touch!
