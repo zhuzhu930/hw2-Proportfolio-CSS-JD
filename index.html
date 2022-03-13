@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Responsive Web Design</title>
+    <title>Jessie Doherty's Professional Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="cssreset" href="./assets/css/reset.css"/>
@@ -16,6 +16,7 @@
       <h1>JESSIE <span class="middle">ZHU</span> DOHERTY</h1>
       <p>My Professional Coding Portfolio!</p>
     </header>
+    
     <!-- Navigation bar -->
     <nav>
       <ul>
@@ -24,30 +25,37 @@
         <li><a href="#coding-work" class="links">Coding Work</a></li>
       </ul> 
     </nav>
+    
     <!-- Main Area -->
     <main>
       <!-- Side bar for introduction-->
       <aside>
         <div class="sidehover">
           <h2 id="aboutme">About Me</h2>
-          <img class="sample-img" src="./assets/images/About Me pic.JPG"></img>
+          <img class="asideimg" src="./assets/images/About Me pic.JPG" alt="recent picture of Jessie Doherty"></img>
           <p>
-            A translator, conference interpreter, amateur artist, avid gardener who wants to be a cool coder and web developer! 
+            A translator, conference interpreter, amateur artist, avid gardener, dog lover who's learning to be a cool coder and web developer! 
           </p>
         </div>
         <div class="sidehover">
           <h2 id="resumé">Resumé</h2>
-          <img class="sample-img" src="./assets/images/GT coding boot camp 2.jpeg"></img>
+          <img class="asideimg" src="./assets/images/GT coding boot camp 2.jpeg" alt="Georgia Tech Coding Boot Camp Photo"></img>
           <p>
             Currently a <a href="https://bootcamp.pe.gatech.edu/coding/">Georgia Tech Coding Boot Camp</a> student! Coding resumé coming soon!
           </p>
         </div>
         <div class="sidehover">
           <h2 id="coding-work">Coding Work</h2>
-          <img class="sample-img" src="./assets/images/coding-student-background.jpg"></img>
+          <img class="asideimg" src="./assets/images/coding-student-background.jpg" alt="Picture of a coding student"></img>
           <p>
             Please take a look at my coding work listed on this page. I will be adding more projects, feel free to come back and take a look!
           </p>
+          <ul>
+            <li><a href="#job1">HTML/CSS/JavaScript</a></li>
+            <li><a href="#job2">APIs/Node.js/OOP</a></li>
+            <li><a href="#job3">SQL/MVC/NoSQL</a></li>
+            <li><a href="#job4">MERN Stack</a></li>
+          </ul>
         </div>
         <form>
           <h1>Send me a query!</h1>
@@ -73,39 +81,56 @@
       </aside>
       <!-- Section for Coding Work list-->
       <section>
-        <div>
-          <h2>HTML/CSS/JavaScript</h2>
-          <div class="sample-img">Image</div>
-          <p>
-            It will stack on top of the sidebar once the screen hits 768px or
-            smaller.
-          </p>
-        </div>
-        <div>
-          <h2>APIs/Node.js/OOP</h2>
-          <div class="sample-img">Image</div>
-          <p>
-            It will stack on top of the sidebar once the screen hits 768px or
-            smaller.
-          </p>
-        </div>
-        <div>
-          <h2>SQL/MVC/NoSQL</h2>
-          <div class="sample-img">Image</div>
-          <p>
-            It will stack on top of the sidebar once the screen hits 768px or
-            smaller.
-          </p>
-        </div>
-        <div>
-          <h2>MERN Stack</h2>
-          <div class="sample-img">Image</div>
-          <p>
-            It will stack on top of the sidebar once the screen hits 768px or
-            smaller.
-          </p>
-        </div>
+          <div class="job-item">
+            <img class="sample-img-left" src="assets/images/work-html_css_javascript.jpeg" alt="Picture of HTML/CSS/JavaScript">
+            <div class="job-list">
+              <h2 id="job1">HTML/CSS/JavaScript</h2>
+              <ul>
+                <li><a class="joblinks" href="https://zhuzhu930.github.io/prework-about-me/" target="_blank">Prework About Me Website</a></li>
+                <li><a class="joblinks" href="https://zhuzhu930.github.io/hw1-code-refactor-JD/" target="_blank">Code Refactor</a></li>
+                <li><a class="joblinks" href="#">CSS Advanced</a></li>
+                <li><a class="joblinks" href="#">JavaScript Basics</a></li>
+              </ul>             
+            </div>
+          </div>
+          <div class="job-item">
+            <img class="sample-img-right" src="assets/images/work-api-node-express-pic.jpeg" alt="Picture of API/NODE.js/Express">
+            <div class="job-list">
+                <h2 id="job2">APIs/Node.js/OOP</h2>
+                <ul>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="job-item">
+            <img class="sample-img-left" src="assets/images/work-sql-vs-nosql-pic2.png" alt="Picture of SQL/NoSQL/MVC">
+            <div class="job-list">
+                <h2 id="job3">SQL/MVC/NoSQL</h2>
+                <ul>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="job-item">
+            <img class="sample-img-right" src="assets/images/work-mern-light-pic.jpeg" alt="Picture of MERN stack">
+            <div class="job-list">
+                <h2 id="job4">MERN Stack</h2>
+                <ul>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                  <li><a class="joblinks" href="#">Placeholder</a></li>
+                </ul>
+            </div>
+          </div>
       </section>
+      
     </main>
     <!-- Footer Contact-list -->
     <footer>
@@ -113,10 +138,10 @@
         Let's keep in touch!
       </h3>
       <ul class="contact-list">
-        <li><a href="mailto:zhuzhu930@yahoo.com">zhuzhu930@yahoo.com</a></li>
-        <li><a href="tel:+17328237072">+1 (732)823-7072</a></li>
-        <li><a href="https://github.com/zhuzhu930">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/jessie-zhu-doherty-45216aa/">LinkedIn</a></li>
+        <li><a href="mailto:zhuzhu930@yahoo.com" target="_blank">zhuzhu930@yahoo.com</a></li>
+        <li><a href="tel:+17328237072" target="_blank">+1 (732)823-7072</a></li>
+        <li><a href="https://github.com/zhuzhu930" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jessie-zhu-doherty-45216aa/" target="_blank">LinkedIn</a></li>
       </ul>
       <p>&copy; Doherty Solutions, LLC. All Rights Reserved. </p>
     </footer>

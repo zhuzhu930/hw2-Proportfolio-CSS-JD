@@ -101,8 +101,20 @@ button:hover {
   border-radius: 1rem;
 }
 .sidehover:hover {
-  background-color: var(--backgroundred);
-  opacity: 0.6;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--backgroundlight),
+    var(--orange)
+  );
+}
+
+.asideimg {
+  background-color: #fff;
+  width: 300px;
+  height: 230px;
+  padding: 0px;
+  border: 1px solid black;
+  border-radius: 1rem;
 }
 
 /* ----Section style---- */
@@ -112,13 +124,57 @@ section {
   padding: 20px;
 }
 
-.sample-img {
+.job-item {
+  padding: 100px;
+  border: none;
+  border-radius: 20px;
+  margin: 50px;
+  box-shadow: 10px 10px 8px var(--backgroundred);
+}
+
+.job-list {
+  text-align: center;
+}
+.job-list h2 {
+  font-family: cursive;
+  font-weight: bolder;
+  color: black;
+  text-shadow: 2px 2px var(--backgroundlight);
+}
+.job-list ul {
+  list-style-type: none;
+  font-size: 25px;
+}
+.job-list ul li {
+  padding: 2px;
+}
+
+.sample-img-left {
+  float: left;
   background-color: #fff;
   width: 300px;
-  height: 230px;
+  height: 200px;
   padding: 0px;
   border: 1px solid black;
   border-radius: 1rem;
+}
+.sample-img-left:hover {
+  width: 400px;
+  height: 265px;
+}
+
+.sample-img-right {
+  float: right;
+  background-color: #fff;
+  width: 300px;
+  height: 200px;
+  padding: 0px;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+.sample-img-right:hover {
+  width: 400px;
+  height: 265px;
 }
 
 /*---- Footer style: style h3 and p---*/
@@ -133,7 +189,7 @@ footer h3 {
   font-family: "Caveat", cursive;
   font-family: "Montserrat", sans-serif;
   font-family: "Satisfy", cursive;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 footer p {
@@ -160,26 +216,26 @@ footer p {
   margin: 20px;
   box-shadow: 10px 10px 8px var(--lightyellow);
 }
+.contact-list a:hover {
+  opacity: 0.7;
+}
 
-/*--- Media queries Need to work on it---*/
+/*--- Media queries ---*/
+/*---Different background colors to show the change */
 @media screen and (max-width: 768px) {
-  /* Use flex-direction to stack the navbar, sidebar, and body */
   main,
   nav {
     flex-direction: column;
   }
-  /* Make the sidebar stack below the body */
+
   section {
     order: 2;
   }
-  /* aside {
-    order: 1;
-  } */
-  /* Change the header background */
+
   header {
     background: #772014;
   }
-  /* Change the navbar and footer background */
+
   nav,
   footer {
     background-color: #bb8588;
