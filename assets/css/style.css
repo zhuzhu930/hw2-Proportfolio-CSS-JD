@@ -16,7 +16,7 @@ body {
   margin: 0;
 }
 
-/* ----Header done---- */
+/* ----Header style---- */
 header {
   padding: 40px;
   text-align: center;
@@ -68,7 +68,7 @@ nav ul {
   background-color: var(--lightyellow);
 }
 
-/* ----Main part---- */
+/* ----Main style---- */
 main {
   display: flex;
   flex-wrap: wrap;
