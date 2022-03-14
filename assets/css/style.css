@@ -5,12 +5,13 @@
   --orange: #ffa952;
   --backgroundred: #ef5a5a;
 }
-
+/* ----Global style ---- */
 * {
   box-sizing: border-box;
 }
 
 body {
+  max-width: 1800px;
   font-family: Arial;
   margin: 0;
 }
@@ -33,11 +34,12 @@ header h1 {
 header p {
   font-size: 30px;
 }
+
 header .middle {
   color: var(--lightyellow);
 }
 
-/* ----Navigation bar Done---- */
+/* ----Navigation bar---- */
 nav {
   background-color: var(--backgroundred);
 }
@@ -60,6 +62,7 @@ nav ul {
   font-weight: bold;
   border-radius: 5px;
 }
+
 .links:hover {
   color: var(--backgroundred);
   background-color: var(--lightyellow);
@@ -79,6 +82,7 @@ aside {
   border-right: 10px solid var(--backgroundred);
   font-family: fantasy;
 }
+
 button {
   background-color: var(--orange);
   border: none;
@@ -93,13 +97,16 @@ button {
   font-size: 20px;
   box-shadow: 10px 10px 8px var(--backgroundlight);
 }
+
 button:hover {
   opacity: 0.8;
 }
+
 .sidehover {
   padding: 20px;
   border-radius: 1rem;
 }
+
 .sidehover:hover {
   background-image: linear-gradient(
     to bottom right,
@@ -129,22 +136,33 @@ section {
   border: none;
   border-radius: 20px;
   margin: 50px;
-  box-shadow: 10px 10px 8px var(--backgroundred);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--backgroundlight),
+    var(--backgroundred)
+  );
+}
+
+.job-item:hover {
+  opacity: 0.8;
 }
 
 .job-list {
   text-align: center;
 }
+
 .job-list h2 {
   font-family: cursive;
   font-weight: bolder;
   color: black;
   text-shadow: 2px 2px var(--backgroundlight);
 }
+
 .job-list ul {
   list-style-type: none;
   font-size: 25px;
 }
+
 .job-list ul li {
   padding: 2px;
 }
@@ -158,6 +176,7 @@ section {
   border: 1px solid black;
   border-radius: 1rem;
 }
+
 .sample-img-left:hover {
   width: 400px;
   height: 265px;
@@ -172,12 +191,13 @@ section {
   border: 1px solid black;
   border-radius: 1rem;
 }
+
 .sample-img-right:hover {
   width: 400px;
   height: 265px;
 }
 
-/*---- Footer style: style h3 and p---*/
+/*---- Footer style---*/
 footer {
   padding: 20px;
   text-align: center;
@@ -198,6 +218,7 @@ footer p {
   font-family: "Satisfy", cursive;
   font-size: 20px;
 }
+
 .contact-list {
   list-style-type: none;
   padding: 0;
@@ -206,6 +227,7 @@ footer p {
   flex-wrap: wrap;
   color: var(--lightyellow);
 }
+
 .contact-list a {
   padding: 15px;
   display: inline-block;
@@ -216,28 +238,54 @@ footer p {
   margin: 20px;
   box-shadow: 10px 10px 8px var(--lightyellow);
 }
+
 .contact-list a:hover {
   opacity: 0.7;
 }
 
-/*--- Media queries ---*/
-/*---Different background colors to show the change */
+/*--- Media queries for responsive design---*/
 @media screen and (max-width: 768px) {
-  main,
-  nav {
+  body {
+    display: flex;
     flex-direction: column;
   }
 
   section {
     order: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin: 0;
+    padding: 0;
   }
 
-  header {
-    background: #772014;
+  .job-item {
+    margin: 50px;
+    padding: 50px;
   }
 
-  nav,
-  footer {
-    background-color: #bb8588;
+  .job-item img {
+    text-align: center;
+  }
+
+  aside {
+    border-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .job-item {
+    padding: 10px;
+    margin: 10px;
+  }
+  .sample-img-left,
+  .sample-img-right {
+    float: none;
+    background-color: #fff;
+    width: 200px;
+    height: 126px;
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 1rem;
   }
 }
