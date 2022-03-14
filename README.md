@@ -46,7 +46,7 @@ I've done the following steps:
 ## 4. Leaving Comments
 
 - While writing HTML and CSS, I've used commenting feature to seperate sections, try out different options by hide/unhide my code.
-- When I'm happy with the design, finally, I've cleaned up my comments by only leaving the necessary ones for the reiewer.
+- When I'm happy with the design, finally, I've cleaned up my comments by only leaving the necessary ones for the reviewer.
 
 ## 5. Write the README.md, to summarize what I've done.
 
