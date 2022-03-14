@@ -29,11 +29,14 @@ I've done the following steps:
 - Define variables for color palette. For the color palette, I've used a online tool to decide the color I want to use:
   https://www.csscolorpalettes.com/
 - Seperate the CSS sections into: Global style, Header, Navigation bar, Main, Aside, Section and Footer.
+
   I've used several kinds of selectors: direct element selector, combined selector, class selector and id selector, pseudo selector, etc. to style the page.
+
 - For display and layout, I've used flexbox in the Main, Aside, Section and Footer area, to make sure these elements are in the areas I want them to be and are fluid while changing viewports.
 - For images, I need to edit and crop them in my Pictures App, then use them in my HTML.
 - For images in the Section area, I've used the simple Float-right or left to achieve my design. I tried to use Grid or Flexbox at the beginning, then found out the simple float could do a better job, then I decided to use the simpler version.
 - Media queries: this is my first time to figure out media queries by myself, I needed to decide the breakpoints. After many tries, I decided to use 768px and 500px as my breakpoints, as when I inspect my page, around 500px, my page layout is not ideal, so I have designed a style specifically for the cellphone viewport.
+
   In the 768px breakpoint, I've used Flexbox for the entire layout, but in the Section part, I've used a single column grid to achieve the simple but responsive design.
 
   In the 500px breakpoint, I noticed the original page design was a bit busy on the smaller screen, so I got rid of some paddings, margins borders, and removed decorative items that might seem odd in a smaller screen. The result is a simpler design but has the same feel as the original design.
